@@ -41,12 +41,14 @@ jobs:
 #            FILENAME: ${{ env.MY_DATE }}_${{ github.run_number }}
 
      steps:
-      - name: Get current time
-        uses: srfrnk/current-time@master
-        id: current-time
-        with:
-         format: YYYYMMDDHHmmss
-        env:
-          FILENAME: ${{ steps.current-time.outputs.formattedTime }}_${{ github.run_number }}_nonprod.json
+       - name: Get current time
+         uses: srfrnk/current-time@master
+         id: current-time
+         with:
+           format: YYYYMMDDHHmmss
+       - name: Use current time
+         env:
+            FILENAME: ${{ steps.current-time.outputs.formattedTime }}_${{ github.run_number }}_nonprod.json
+         run : echo $TIME
          
         
