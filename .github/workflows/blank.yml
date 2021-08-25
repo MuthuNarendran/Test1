@@ -33,5 +33,5 @@ jobs:
           echo test, and deploy your project.
           echo $FILENAME
         env:
-         FILENAME: ${{ steps.date.outputs.date }}_${{ github.run_number }}
+         FILENAME: $(date +'%Y-%m-%dT%H:%M:%S')_${{ github.run_number }}
           
