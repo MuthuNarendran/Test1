@@ -42,13 +42,13 @@ jobs:
 
 
      steps:
-        - name: Get current time
-          uses: 1466587594/get-current-time@v2
-          id: current-time
-          with:
+       - name: Get current time
+         uses: 1466587594/get-current-time@v2
+         id: current-time
+         with:
             format: YYYYMMDD-HH
             utcOffset: "+08:00"
-          env:
+         env:
             TIME: "${{ steps.current-time.outputs.time }}"
             TIME1: ${{ steps.current-time.outputs.formattedTime }}
-            run: echo $TIME and $TIME1
+#             run: echo $TIME and $TIME1
