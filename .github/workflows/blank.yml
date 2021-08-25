@@ -33,8 +33,7 @@ jobs:
          format: YYYYMMDD-HH
          utcOffset: "+08:00"
         env:
-         TIME: "${{ steps.current-time.outputs.time }}"
-         FILENAME: ${{ TIME }}_${{ github.run_number }}
+         FILENAME: ${{ steps.current-time.outputs.time }}_${{ github.run_number }}
          run: echo filename is $FILENAME
-              echo time is $TIME
+             
           
