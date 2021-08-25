@@ -41,7 +41,7 @@ jobs:
 #            FILENAME: ${{ env.MY_DATE }}_${{ github.run_number }}
 
      steps:
-      - name: Get current time
+      - name: Get current t
         uses: srfrnk/current-time@master
         id: current-time
         with:
