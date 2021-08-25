@@ -37,7 +37,7 @@ jobs:
            TIME: "${{ steps.current-time.outputs.time }}"
            FILENAME: ${TIME}_${{ github.run_number }}
            run: echo filename is $FILENAME
-                echo time is ${{ steps.current-time.outputs.time }}
+                echo time is  $TIME 
          
 
 
