@@ -28,11 +28,11 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
-          echo $FILENAME
-          echo ::set-output name=date::$(date +'%Y-%m-%d')
+        with:
+         format: YYYYMMDD-HH
         env:
-         FILENAME: ${{ steps.date.outputs.date  }}_${{ github.run_number }}
+         TIME: "${{ steps.current-time.outputs.time }}"
+         FILENAME: ${TIME}_${{ github.run_number }}
+         run: echo $FILENAME
+              echo $TIME
           
