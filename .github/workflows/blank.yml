@@ -33,10 +33,9 @@ jobs:
          with:
           format: YYYYMMDD-HH
           utcOffset: "+08:00"
-          
+          run: echo "MY_DATE=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
          env:
-           run: echo "MY_DATE=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
-                echo filename is $FILENAME
+           run: echo filename is $FILENAME
                 echo time is  $TIME 
            TIME: ${{ env.MY_DATE }}
            FILENAME: ${{ env.MY_DATE }}_${{ github.run_number }}
