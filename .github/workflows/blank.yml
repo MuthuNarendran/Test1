@@ -42,6 +42,7 @@ jobs:
 
      steps:
       - name: Get current time
+        uses: actions/current-time@master
         with:
          format: YYYYMMDDHHmmss
       -  name: Use current time
