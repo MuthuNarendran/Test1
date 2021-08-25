@@ -31,6 +31,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          echo "result" : ${{ steps.date.outputs.date }} - ${{ github.run_number }}
-        env: ${{ steps.date.outputs.date }} - ${{ github.run_number }}
+          echo FILENAME
+        env:
+         FILENAME: ${{ steps.date.outputs.date }} - ${{ github.run_number }}
           
