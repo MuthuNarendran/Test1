@@ -49,5 +49,5 @@ jobs:
       -  name: Use current time
          env:
           TIME: "${{ steps.current-time.outputs.formattedTime }}"
-          FILENAME: ${TIME}_${{ github.run_number }}
+          FILENAME: TIME_${{ github.run_number }}
          run: echo $TIME
