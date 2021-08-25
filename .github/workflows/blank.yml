@@ -27,9 +27,9 @@ jobs:
          run: echo Hello, world!
 
 #       # Runs a set of commands using the runners shell
-       - name: Get current time
+       - name: Get current date
+         id: date
          uses: 1466587594/get-current-time@v2
-         id: current-time
          with:
           format: YYYYMMDD-HH
           utcOffset: "+08:00"
