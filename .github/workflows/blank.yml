@@ -46,6 +46,7 @@ jobs:
         id: current-time
         with:
          format: YYYYMMDDHHmmss
-        env:
+      -  name: Use current time
+         env:
           FILENAME: ${{ steps.current-time.outputs.formattedTime }}_${{ github.run_number }}_nonprod.json
         
