@@ -31,6 +31,6 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          echo "result" : ${{ steps.date.outputs.date }} - ${{ github.run_number }} -ki.json
-        env: ${{ steps.date.outputs.date }} - ${{ github.run_number }} -ki.json
+          echo "result" : ${{ steps.date.outputs.date }} - ${{ github.run_number }}
+        env: ${{ steps.date.outputs.date }} - ${{ github.run_number }}
           
