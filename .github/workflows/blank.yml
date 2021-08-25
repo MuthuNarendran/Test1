@@ -48,4 +48,5 @@ jobs:
          format: YYYYMMDDHHmmss
         env:
           FILENAME: ${{ steps.current-time.outputs.formattedTime }}_${{ github.run_number }}_nonprod.json
+          run: echo $FILENAME
         
