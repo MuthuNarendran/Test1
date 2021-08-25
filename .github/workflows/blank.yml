@@ -42,8 +42,6 @@ jobs:
 
      steps:
       - name: Get current time
-        uses: srfrnk/current-time@master
-        id: current-time
         with:
          format: YYYYMMDDHHmmss
       -  name: Use current time
