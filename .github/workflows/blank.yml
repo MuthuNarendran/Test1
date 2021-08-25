@@ -34,5 +34,5 @@ jobs:
           echo $FILENAME
           echo "DATEANDTIME::$(date +'%Y-%m-%dT%H:%M:%S')" >> $GITHUB_ENV
         env:
-         FILENAME: ${DATEANDTIME}_${{ github.run_number }}
+         FILENAME: ${{env.DATEANDTIME}}_${{ github.run_number }}
           
