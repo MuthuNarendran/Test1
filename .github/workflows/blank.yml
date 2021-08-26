@@ -41,10 +41,13 @@ jobs:
 #            FILENAME: ${{ env.MY_DATE }}_${{ github.run_number }}
 
      steps:
-       - name: Use current time
-         env:
-            FILENAME: ${{ github.run_number }}_nonprod.json
-         run : echo $FILENAME $date + '%d-%m-%y'
+      - name: Echo env date
+        run: 
+          echo "current_date=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+
+      - name: Echo env date
+        run: 
+          echo "${{ env.current_date }}"
        
          
         
