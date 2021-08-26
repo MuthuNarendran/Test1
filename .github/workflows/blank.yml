@@ -49,7 +49,7 @@ jobs:
        - name: Use current time
          env:
             FILENAME: ${{ github.run_number }}_nonprod.json
-         run : echo $FILENAME $"date + '%d-%m-%y"
+         run : echo $FILENAME $date + '%d-%m-%y'
        
          
         
