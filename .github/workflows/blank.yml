@@ -48,7 +48,7 @@ jobs:
            format: YYYYMMDDHHmmss
        - name: Use current time
          env:
-            FILENAME: ${ date + '%d-%m-%y' }_${{ github.run_number }}_nonprod.json
+            FILENAME: date + '%d-%m-%y' _${{ github.run_number }}_nonprod.json
          run : echo $FILENAME
        
          
