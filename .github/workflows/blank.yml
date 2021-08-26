@@ -44,7 +44,8 @@ jobs:
       - name: Get Date
         run: echo "current_date_time=$(date +'%m%d%Y%H%M')" >> "${GITHUB_ENV}"
       - name: Date
-        run: echo "${{ env.current_date_time }}"
+        env:
+           name: ${{ env.current_date_time }}_json
 
      
        
