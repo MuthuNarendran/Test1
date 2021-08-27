@@ -55,6 +55,6 @@ jobs:
              content: 'content'
              run: pwd
       - name: present
-        run: pwd
+        run: ls Test1
       
            
