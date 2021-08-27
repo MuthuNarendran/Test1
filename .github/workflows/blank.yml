@@ -46,8 +46,8 @@ jobs:
       - name: Date
         env:
            name: ${{ env.current_date_time }}_json
-        run: echo ls
-             ls
+        run: ls
+             
 
      
        
