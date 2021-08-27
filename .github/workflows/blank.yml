@@ -55,6 +55,9 @@ jobs:
              content: 'content'
              run: pwd
       - name: present
-        run: ls bash
+        run: |
+          touch myfile.txt
+          ls -a
+            
       
            
