@@ -50,10 +50,11 @@ jobs:
       - name: Create A File
         uses: 1arp/create-a-file-action@0.2
         with:
-             path: default
-             file: default
-             content: contentfile
+             path: 'path'
+             file: 'file'
+             content: 'content'
              run: pwd
-            
+      - name: present
+        run: pwd
       
            
